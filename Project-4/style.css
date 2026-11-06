@@ -1,0 +1,139 @@
+
+body {
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: darkblue;
+}
+
+p {
+    color: darkgreen;
+    font-family: "Times New Roman", Times, serif;
+}
+
+input {
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background-color: darkblue;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+/* ===== Project 4 ke naye hisse ===== */
+
+/* Loading text chhupane ke liye */
+.hidden {
+    display: none;
+}
+
+/* Success message (hara) */
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+/* Error message (laal) */
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Users ki list */
+#userList {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+#userList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: #f0f6ff;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}

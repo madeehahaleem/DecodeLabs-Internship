@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4 - Frontend and Backend Integration</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#add">Add User</a>
+        <a href="#users">Users</a>
+    </nav>
+</header>
+<main>
+
+    <!-- Main Heading -->
+    <h1>User Manager</h1>
+    <p>Frontend and Backend Integration</p>
+
+    <!-- Add User Card -->
+    <div class="card" id="add">
+        <h2>Add User</h2>
+
+        <form id="userForm">
+            <label for="name">Name</label>
+            <br>
+            <input type="text" id="name" placeholder="Enter name">
+
+            <br><br>
+
+            <label for="email">Email</label>
+            <br>
+            <input type="text" id="email" placeholder="Enter email">
+
+            <br><br>
+
+            <button type="submit">Add User</button>
+        </form>
+
+        <!-- Success ya error message yahan dikhega -->
+        <p id="message"></p>
+    </div>
+
+    <!-- Users List Card -->
+    <div class="card" id="users">
+        <h2>Users</h2>
+
+        <button type="button" id="loadBtn">Load Users</button>
+
+        <!-- Request chalte waqt dikhega -->
+        <p id="loading" class="hidden">Loading...</p>
+
+        <!-- JavaScript yahan users ki list banayega -->
+        <ul id="userList"></ul>
+    </div>
+
+</main>
+<footer>
+    <p>DecodeLabs Internship - Project 4</p>
+</footer>
+</body>
+</html>
